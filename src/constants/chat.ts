@@ -18,6 +18,7 @@ Carefully heed the user's instructions.
 Respond using Markdown.`;
 
 export const modelOptions: ModelOptions[] = [
+  'gpt-4o-mini',
   'gpt-3.5-turbo',
   'gpt-3.5-turbo-16k',
   'gpt-3.5-turbo-1106',
