@@ -35,6 +35,9 @@ jobs:
         run: yarn build
         env:
           VITE_GOOGLE_CLIENT_ID: ${{ secrets.GCLIENT }}
+          VITE_DEFAULT_API_ENDPOINT: ${{ vars.VITE_DEFAULT_API_ENDPOINT }}
+          VITE_OPENAI_API_KEY: ${{ vars.VITE_OPENAI_API_KEY }}
+          VITE_CUSTOM_API_ENDPOINT: ${{ vars.VITE_CUSTOM_API_ENDPOINT }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
